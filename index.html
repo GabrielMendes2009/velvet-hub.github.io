@@ -12,7 +12,7 @@
     <meta property="og:title" content="Velvet Hub - Persona Series">
     <meta property="og:description" content="Navegue pelos perfis detalhados de cada personagem e descubra as histórias únicas de uma das maiores franquias de RPG mundiais.">
     <meta property="og:url" content="https://gabrielmendes2009.github.io/velvet-hub/index.html">
-    <meta property="og:image" content="https://gabrielmendes2009.github.io/velvet-hub/img/persona5.png"> <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://gabrielmendes2009.github.io/velvet-hub/img/icon.png"> <meta name="twitter:card" content="summary_large_image">
 
     <link rel="icon" href="./img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
@@ -63,7 +63,7 @@
                     </div>
                     <div class="conteudo-sinopse">
                         <h2>PERSONA 2</h2>
-                        <p>Explore a trama de Persona 2, onde os protagonistas enfrentam desafios sobrenaturais e mistérios in uma cidade cheia de segredos.</p>
+                        <p>Explore a trama de Persona 2, onde os protagonistas enfrentam desafios sobrenaturais e mistérios em uma cidade cheia de segredos.</p>
                         <div class="container-botao">
                             <a href="./persona2/persona2.html" class="btn-recortado p2-btn">Saiba Mais</a>
                         </div>
@@ -127,6 +127,33 @@
         </main>
 
     </div>
+
+    <button id="btn-topo" onclick="voltarAoTopo()" title="Voltar ao Topo">&#10094;</button>
+
+    <script>
+
+        // Pega o elemento do botão
+        const botaoTopo = document.getElementById("btn-topo");
+
+        // Escuta o evento de rolagem (scroll) da página
+        window.onscroll = function() {
+            // Se descer mais de 400 pixels do topo, adiciona a classe que mostra o botão
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                botaoTopo.classList.add("visivel");
+            } else {
+                botaoTopo.classList.remove("visivel");
+            }
+        };
+
+        // Função executada ao clicar no botão
+        function voltarAoTopo() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" /* Rolagem suave de volta para o início */
+            });
+        }
+
+    </script>
 
 </body>
 </html>
