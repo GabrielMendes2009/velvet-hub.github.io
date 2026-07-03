@@ -482,3 +482,29 @@ h2 {
     opacity: 1; /* Torna o botão visível */
     visibility: visible; /* Garante que o botão seja clicável quando visível */
 }
+
+/* ==========================================
+   BOTÃO DA WIKI NOS CARDS
+   ========================================== */
+.btn-wiki {
+    display: inline-block;
+    align-self: flex-start; /* Impede o botão de esticar a largura toda se não quiseres */
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Efeito de hover geral */
+.btn-wiki:hover {
+    background-color: #ffffff;
+    color: #000000; /* Inverte a cor do texto para preto ao passar o rato */
+    transform: translateY(-2px); /* Dá um pequeno salto para cima */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
