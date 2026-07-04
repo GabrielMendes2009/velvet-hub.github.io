@@ -100,3 +100,6 @@ h2 {
 
 #btn-topo { background-color: #a80fff; }
 #btn-topo:hover { background-color: #9e10f0; }
+
+.p1-card .btn-wiki { border-color: #7a2b91; color: #b974d6; } /* Exemplo tom roxo P1 */
+.p1-card .btn-wiki:hover { background-color: #7a2b91; color: #fff; }
