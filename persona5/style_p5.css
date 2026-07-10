@@ -89,3 +89,6 @@ h2 {
 
 #btn-topo { background-color: #d92323; }
 #btn-topo:hover { background-color: #c01b1b; }
+
+.p5-card .btn-wiki { border-color: #dc143c; color: #ff4d6d; } /* Vermelho Persona 5 */
+.p5-card .btn-wiki:hover { background-color: #dc143c; color: #fff; }

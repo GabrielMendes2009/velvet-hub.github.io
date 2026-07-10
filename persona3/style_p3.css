@@ -89,3 +89,6 @@ h2 {
 
 #btn-topo { background-color: #00a2ff; }
 #btn-topo:hover { background-color: #0088cc; }
+
+.p3-card .btn-wiki { border-color: #00a2ff; color: #4da6ff; } /* Azul Persona 3 */
+.p3-card .btn-wiki:hover { background-color: #00a2ff; color: #fff; }

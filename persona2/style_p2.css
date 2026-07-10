@@ -96,3 +96,6 @@ h2 {
 
 #btn-topo { background-color: #ff0033; }
 #btn-topo:hover { background-color: #dd002c ; }
+
+.p2-card .btn-wiki { border-color: #ff0033; color: #ff4d6d; } /* Vermelho Persona 2 */
+.p2-card .btn-wiki:hover { background-color: #ff0033; color: #fff; }

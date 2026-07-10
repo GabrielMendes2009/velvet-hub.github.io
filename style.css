@@ -13,24 +13,24 @@
     margin: 0;
     padding: 0; /* Remove margens e paddings padrão */
     box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura e altura dos elementos */
-    font-family: "Arial", Impact, sans-serif;
+    font-family: "Arial", Impact, sans-serif; /* Define a fonte padrão para todos os elementos */
 }
 
 /* Estilização do corpo da página, definindo cor de fundo, cor do texto e altura mínima */
 body {
-    background-color: #1a1a1a;
-    color: #ffff;
+    background-color: #1a1a1a; /* Define a cor de fundo da página */
+    color: #ffff; /* Define a cor do texto da página */
     min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura total da janela de visualização */
     animation: fade 1.5s; /* Aplica a animação de fade-in à página */
-    font-weight: normal;
+    font-weight: normal; /* Define o peso da fonte como normal */
 }
 
 h1 {
-    font-family: "Arial Black", Impact, sans-serif;
+    font-family: "Arial Black", Impact, sans-serif; /* Define a fonte para os títulos h1 */
 }
 
 h2 {
-    font-family: "Arial Black", Impact, sans-serif;
+    font-family: "Arial Black", Impact, sans-serif; /* Define a fonte para os títulos h2 */
 }
 
 /* Estilização do container principal, utilizando flexbox para organizar os elementos */
@@ -46,25 +46,25 @@ h2 {
 
 /* Estilização do menu lateral, definindo largura, cor de fundo, padding e layout flexível */
 .menu-lateral {
-    width: 300px;
-    background-color: #000000;
+    width: 300px; /* Define a largura do menu lateral */
+    background-color: #000000; /* Define a cor de fundo do menu lateral */
     padding: 40px 20px; /* Adiciona espaçamento interno ao menu lateral */
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Utiliza flexbox para organizar os elementos do menu lateral */
+    flex-direction: column; /* Organiza os elementos do menu lateral em coluna */
     gap: 30px; /* Adiciona espaçamento entre os elementos do menu lateral */
-    border-right: 5px solid #3a43e4;
+    border-right: 5px solid #3a43e4; /* Adiciona uma borda à direita do menu lateral para criar um efeito visual */
     position: sticky;   /* Ele vai fixar na posição inicial pra toda vida */
-    top: 0;
+    top: 0; /* Define a posição do menu lateral em relação ao topo da página */
     height: 100vh;     /* Ocupa a altura inteira da tela */
 }
 
 /* Estilização da logo, definindo tamanho da fonte, cor, alinhamento e espaçamento entre letras */
 .logo-velvet {
-    font-size: 24px;
-    color: #3a43e4;
-    text-align: center;
-    letter-spacing: 2px;
-    font-family: "Arial Black", Impact, sans-serif;
+    font-size: 24px; /* Define o tamanho da fonte da logo */
+    color: #3a43e4; /* Define a cor da logo */
+    text-align: center; /* Alinha o texto no centro */
+    letter-spacing: 2px; /* Adiciona espaçamento entre as letras */
+    font-family: "Arial Black", Impact, sans-serif; /* Define a fonte da logo */
 }
 
 /* Estilização do link da logo, removendo sublinhado, definindo cor e largura, além de aplicar transição para efeitos de transformação */
@@ -72,55 +72,55 @@ h2 {
     text-decoration: none !important; /* Força o sumiço do sublinhado */
     color: #3a43e4 !important; /* Força a logo a ficar com o seu azul */
     display: block; /* Garante que o link ocupe toda a largura disponível */
-    width: 100%;
-    transition: transform 0.2s ease;
-    font-family: "Arial Black", Impact, sans-serif;
+    width: 100%; /* Garante que o link ocupe toda a largura disponível */
+    transition: transform 0.2s ease; /* Adiciona uma transição suave para a transformação do link */
+    font-family: "Arial Black", Impact, sans-serif; /* Define a fonte do link da logo */
 }
 
 .link-index:hover {
     transform: scale(1.05); /* Aumenta um pouco a logo no hover para criar um efeito de destaque */
-    color: #3a43e4;
-    font-family: "Arial Black", Impact, sans-serif;
+    color: #3a43e4; /* Mantém a cor da logo azul no hover */
+    font-family: "Arial Black", Impact, sans-serif; /* Define a fonte do link da logo no hover */
 }
 
 /* Estilização da lista de links no menu lateral, removendo marcadores e definindo layout flexível em coluna */
 .menu-lateral ul {
     list-style: none; /* Remove os marcadores da lista */
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Utiliza flexbox para organizar os itens da lista */
+    flex-direction: column; /* Organiza os itens da lista em coluna */
     gap: 15px; /* Adiciona espaçamento entre os itens da lista */
-    font-family: "Arial Black", Impact, sans-serif;
+    font-family: "Arial Black", Impact, sans-serif; /* Define a fonte da lista */
 }
 
 /* Estilização dos links no menu lateral, definindo cor, padding, fundo, tamanho da fonte e efeitos de transição e transformação */
 .menu-lateral ul li a {
     display: block; /* Garante que o link ocupe toda a largura disponível para facilitar o clique */
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    background-color: #222;
-    font-size: 18px;
-    transition: all 0.3 ease;
-    border-radius: 5px;
+    color: white; /* Define a cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    padding: 15px 20px; /* Adiciona espaçamento interno aos links para aumentar a área clicável */
+    background-color: #222; /* Define a cor de fundo dos links */
+    font-size: 18px; /* Define o tamanho da fonte dos links */
+    transition: all 0.3 ease; /* Adiciona uma transição suave para todas as propriedades do link */
+    border-radius: 5px; /* Adiciona cantos arredondados aos links */
     transform: skewX(-10deg); /* Aplica um efeito de inclinação para criar um visual mais dinâmico e moderno */
-    font-family: "Arial Black", Impact, sans-serif;
+    font-family: "Arial Black", Impact, sans-serif; /* Define a fonte dos links */
 }
 
 /* Efeito de hover nos links do menu lateral, aplicando transformação e mudança de cor */
 .menu-lateral ul li a:hover {
     transform: skewX(-10deg) scale(1.05); /* Aumenta um pouco o link no hover para criar um efeito de destaque */
-    color: #000000;
-    border-radius: 5px;
-    font-family: "Arial Black", Impact, sans-serif;
+    color: #000000; /* Muda a cor do texto para preto no hover */
+    border-radius: 5px; /* Mantém os cantos arredondados no hover */
+    font-family: "Arial Black", Impact, sans-serif; /* Define a fonte dos links no hover */
 }
 
 /* Estilização do link ativo no menu lateral, aplicando transformação, desabilitando eventos de clique e garantindo que o texto fique branco */
 .menu-lateral ul li a.ativo {
-    border-radius: 5px;
+    border-radius: 5px; /* Mantém os cantos arredondados no link ativo */
     transform: skewX(-10deg) scale(1.05); /* Aplica a mesma transformação do hover para destacar o link ativo */
     pointer-events: none; /* Impede o usuário de clicar na página que já está aberta */
     color: #ffffff !important; /* Garante que o texto fique branco */
-    font-family: "Arial Black", Impact, sans-serif;
+    font-family: "Arial Black", Impact, sans-serif; /* Define a fonte do link ativo */
 }
 
 
@@ -175,34 +175,34 @@ h2 {
 
 .conteudo-principal {
     flex: 1; /* Ocupa todo o resto do espaço da tela */
-    padding: 50px;
+    padding: 50px; /* Adiciona espaçamento interno ao conteúdo principal */
     background-color: #141414;
 }
 
 /* Estilização da seção de introdução, definindo layout flexível em coluna e alinhamento central */
 .introducao h1 {
-    font-size: 42px;
+    font-size: 42px; /* Define o tamanho da fonte do título de introdução */
     color: #3a43e4; 
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo do título */
+    letter-spacing: 1px; /* Adiciona espaçamento entre as letras do título */
 }
 
 /* Estilização do parágrafo de introdução, definindo tamanho da fonte, altura da linha, cor, família da fonte e largura máxima */
 .introducao p {
-    font-size: 16px;
+    font-size: 16px; /* Define o tamanho da fonte do parágrafo de introdução */
     line-height: 1.6; /* Aumenta a altura da linha para melhorar a legibilidade do texto */
-    color: #cccccc;
-    font-family: "Arial", sans-serif; 
-    max-width: 800px;
+    color: #cccccc; /* Define a cor do texto do parágrafo de introdução */
+    font-family: "Arial", sans-serif;  /* Define a família da fonte do parágrafo de introdução */
+    max-width: 800px; /* Limita a largura máxima do parágrafo de introdução para melhorar a legibilidade */
 }
 
 /* Estilização do separador, definindo altura, cor de fundo, margens e aplicando transformação para criar um efeito inclinado */
 .separador {
-    border: none;
-    height: 4px;
-    background-color: #3a43e4;
-    margin: 40px 0;
-    transform: skewX(-15deg);
+    border: none; /* Remove a borda padrão do separador */
+    height: 4px; /* Define a altura do separador */
+    background-color: #3a43e4; /* Define a cor de fundo do separador */
+    margin: 40px 0; /* Adiciona espaçamento acima e abaixo do separador */
+    transform: skewX(-15deg); /* Aplica uma transformação para inclinar o separador, criando um efeito visual interessante */
 }
 
 
@@ -214,20 +214,20 @@ h2 {
 .grid-sinopses {
     display: grid; /* Utiliza grid layout para organizar os cards de sinopse */
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));  /* Cria colunas responsivas que se ajustam ao tamanho da tela, com um mínimo de 240px e ocupando o espaço disponível */
-    gap: 25px;
-    width: 100%;
+    gap: 25px; /* Adiciona espaçamento entre os cards de sinopse */
+    width: 100%; /* Garante que a grade ocupe toda a largura disponível */
     align-items: start; /* Impede que os cards estiquem tortos para baixo */
 }
 
 /* Estilização dos cards de sinopse, definindo cor de fundo, borda, padding, layout flexível em coluna e efeitos de transição */
 .sinopse-card {
-    background-color: #0b0b0b;
-    border: 2px solid #222;
-    border-radius: 5px;
-    display: flex;
+    background-color: #0b0b0b; /* Define a cor de fundo dos cards de sinopse */
+    border: 2px solid #222; /* Define a cor da borda dos cards de sinopse */
+    border-radius: 5px; /* Adiciona cantos arredondados aos cards de sinopse */
+    display: flex; /* Utiliza flexbox para organizar o conteúdo dos cards de sinopse */
     flex-direction: column; /* Organiza o conteúdo do card em coluna */
     overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites do card */
-    justify-content: space-between;
+    justify-content: space-between; /* Garante que o conteúdo do card seja distribuído uniformemente, com espaço entre os elementos */
     transition: transform 0.3s ease, border-color 0.3s ease; /* Transição suave para transformações e mudanças de cor da borda */
     height: 580px; /* Garante que os cards tenham a mesma altura, preenchendo o espaço disponível na grade */
 }
@@ -285,7 +285,7 @@ h2 {
 .capa-jogo {
     width: 100%;
     height: 320px; /* Define uma altura fixa para a capa do jogo, garantindo consistência entre os cards */
-    margin-bottom: 0;
+    margin-bottom: 0; /* Remove a margem inferior da capa do jogo para que ela fique colada ao conteúdo abaixo */
     border-radius: 5px; /* Adiciona cantos arredondados à imagem */
     overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse os limites do card */
 }
